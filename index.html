@@ -3,6 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap">
 <style>
 /* 레이아웃: 매뉴얼 원본 화면 이미지가 주인공. 챕터마다 큰 이미지 스테이지 + 위에 번호 핀 + 아래 썸네일 줄. 글은 핀 설명 한 줄씩만 */
 :root{
@@ -218,13 +219,65 @@ body{background:var(--side)}
 main{padding-bottom:40px}
 .foot{margin-top:0!important;border-top:1px solid var(--line)}
 @media (min-width:1160px){.cover .wrap,main>.wrap,main .chapter.wrap,.foot.wrap{padding-inline:36px}}
+
+/* ===== ARTE 톤앤매너 (자재리스트 기준) ===== */
+:root{--side:#eeefef;--bg:#ffffff;--ink:#454541;--muted:#777770;--line:#e5e3de;--soft:#f4f1ee;--olive:#9b7e6f;--olive-soft:#f4f1ee;--navy:#5b524c;--accent:#9b7e6f;
+ --f-body:'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+body{background:var(--side);color:var(--ink);font-family:var(--f-body);line-height:1.8}
+.cover,main,.foot{max-width:1180px;background:#fff;box-shadow:0 2px 10px #00000008}
+.cover{margin-top:24px}
+.foot{margin-bottom:24px;border-top:1px solid var(--line);text-align:center;letter-spacing:1px;font-size:11px;line-height:2.2}
+.cover .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:27px 24px;border-bottom:1px solid var(--line)}
+.arte-brand{font-size:22px;letter-spacing:5px;color:var(--accent);font-weight:600;line-height:1.5}
+.arte-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.arte-row .co{margin:0;line-height:1.4;font-size:20px;letter-spacing:0;color:var(--ink);font-weight:500;white-space:nowrap}
+.arte-brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:1px;font-weight:400}
+.cover .wrap.arte-hero{display:block;padding-block:34px 18px;border-bottom:0}
+.arte-hero .eyebrow{font-size:11px;letter-spacing:3px;color:var(--accent)}
+.arte-hero h1{font-weight:400;font-size:36px;line-height:1.5;letter-spacing:-1px;margin:10px 0 0;color:var(--ink)}
+h1,h2,h3,h4{color:var(--ink)}
+.chead{border-bottom:1px solid var(--line)!important}
+.chead .no{color:var(--accent)!important;font-weight:400!important}
+.chead h2{font-weight:500}
+.sec>h3{border-bottom:1px solid var(--line)!important;font-weight:500}
+.sec>h3 .cd,.rf-sec>h3 .cd{color:var(--accent)!important;font-weight:400}
+.part{background:var(--soft)!important;color:var(--ink)!important;border-left:3px solid var(--accent)}
+.part.rf{border-left-color:#7d8a86}
+.part h2{color:var(--ink)!important;font-weight:500}
+.btn,.card,.panel,.mission,.rule-note,.toc a,.toc2 .col,.stagebox,.figure,.slide .img,.tpl,.verdict,.cost,.chk label,.seg button,.sm,.ms,.nowdo,.xlscroll,.tabs2 button,.stab,.part,.cap,.thumb,.done-msg,.fld input,.inp,.mbox,.alerts li,.sp-card{border-radius:2px!important}
+.btn{border-color:var(--line);font-size:12.5px}
+.btn:hover{background:var(--soft);border-color:var(--accent)}
+.btn.on,.btn.pri,.tabs2 button.on,.stab.on{background:var(--accent)!important;border-color:var(--accent)!important;color:#fff!important}
+.vtitle .code,.slide .sh .t i,.rf-sec .slide .sh .t i{background:var(--accent)!important;border-radius:2px}
+.vtitle .ck,.checkline{color:#b0493a}
+.toc a:hover,.toc2 a:hover{border-color:var(--accent)}
+.toc span b,.toc2 a b{color:var(--accent)}
+.toc2 .col.as h3,.toc2 .col.rf h3{color:var(--accent)!important;font-weight:500;letter-spacing:.5px}
+.linkbtn{color:var(--accent)!important}
+.seg button.on{border-color:var(--accent)!important;background:var(--soft)!important}
+.chk label.on{border-color:#cdbdb3!important;background:var(--soft)!important}
+.chk input{accent-color:var(--accent)!important}
+.prog i{background:var(--accent)!important}
+.rule-note{background:var(--soft)!important;border-color:#e0d6cf!important}
+.rule-note>b{color:var(--accent)!important}
+.mission{border-color:var(--line)}
+.warnbar{background:#b0493a;border-radius:2px}
+.sm.hl{border-color:#d9c7bb;background:var(--soft)}
+.sm.hl b::after{background:var(--accent)}
+.ms.on{border-color:var(--accent)!important;box-shadow:0 0 0 3px #9b7e6f22!important}
+.nowdo{background:var(--soft)!important;border-color:#e0d6cf!important}
+.nowdo b{color:var(--accent)!important}
+.bubble{background:#efe9e4!important;color:var(--ink)!important}
+.verdict.free{background:#eef2ec!important;color:#4d6446!important}
+.stepblk,.slide{border-bottom-color:var(--line)!important}
+@media (max-width:600px){.cover .wrap{flex-wrap:wrap}.arte-row{gap:12px}.arte-row .co{font-size:16px;white-space:normal}.arte-hero h1{font-size:28px}.cover{margin-top:0}.foot{margin-bottom:0}}
 </style>
 
 <header class="cover">
   <div class="wrap">
-    <div><div class="brand">아르떼 &amp; 아이오틱스</div><h1>견적서 작성 매뉴얼</h1></div>
+    <div class="arte-brand"><div class="arte-row">ARTE<h1 class="co">견적서 작성 매뉴얼</h1></div><small>CS TEAM · ESTIMATE MANUAL</small></div>
   </div>
-</header>
+  </header>
 
 <main>
 <nav class="wrap toc" aria-label="챕터">
