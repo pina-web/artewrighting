@@ -441,6 +441,7 @@ h1,h2,h3,h4{color:var(--ink)}
 .share{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 .share div{border:1px solid var(--line);background:#fff;border-radius:2px;padding:12px 14px;font-size:14.5px;line-height:1.7}
 .share b{display:block;color:var(--accent);margin-bottom:2px}
+.imp-note{display:flex;gap:14px;align-items:center;flex-wrap:wrap;border:1px solid #e3b8ae;border-left:4px solid #b0493a;background:#fbf1ee;padding:14px 18px;border-radius:2px;font-size:16px;line-height:1.6;color:var(--ink)}.imp-note b{color:#b0493a;font-size:17px;letter-spacing:.5px;white-space:nowrap}.imp-note strong{color:#b0493a}
 @media (max-width:560px){.share{grid-template-columns:1fr}}
 </style>
 
@@ -452,6 +453,7 @@ h1,h2,h3,h4{color:var(--ink)}
 
 <main>
 <div class="wrap" style="padding-top:22px">
+  <div class="imp-note" role="note" style="margin-bottom:14px"><b>중요!!!</b><span>견적서는 엑셀 함수가 적용되어 있으므로 <strong>수동으로 입력하거나 임의수정하지 말 것</strong></span></div>
   <div class="rule-note">
     <b>전체 흐름</b>
     <div class="route"><span>SharePoint › 문서 › 계약서폴더</span><i>›</i><span>견적서 원본 다운로드</span><i>›</i><span>작성</span><i>›</i><span class="end">RPA폴더 › 2025 업로드</span><i>›</i><span>자동 생성 확인</span><i>›</i><span>견적 이미지 · 도면</span><i>›</i><span>공유폴더 업로드</span></div>
